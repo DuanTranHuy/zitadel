@@ -25,5 +25,7 @@ ENV ZITADEL_EXTERNALSECURE=${ZITADEL_EXTERNALSECURE}
 ENV ZITADEL_EXTERNALDOMAIN=${ZITADEL_EXTERNALDOMAIN}
 
 EXPOSE 8080
+COPY config.yaml config.yaml
+COPY init.yaml init.yaml
 
-CMD ["start-from-init", "--masterkey", "MasterkeyNeedsToHave32Characters", "--tlsMode", "disabled"]
+CMD ["start-from-init", "--steps", "init.yaml", "--masterkey", "MasterkeyNeedsToHave32Characters", "--tlsMode", "disabled"]
