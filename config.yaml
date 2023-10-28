@@ -1,0 +1,29 @@
+ExternalSecure: true
+ExternalDomain: '0.0.00.'
+ExternalPort: 443
+
+Database:
+    postgres:
+        Host: localhost
+        Port: 5432
+        Database: zitadel
+        MaxOpenConns: 25
+        MaxConnLifetime: 1h
+        MaxConnIdleTime: 5m
+        Options:
+        User:
+            Username: zitadel
+            Password: zitadel
+            SSL:
+                Mode: disable
+                RootCert:
+                Cert:
+                Key:
+        Admin:
+            Username: postgres
+            Password: postgres
+            SSL:
+                Mode: disable
+                RootCert:
+                Cert:
+                Key:
