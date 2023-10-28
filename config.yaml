@@ -1,11 +1,11 @@
 ExternalSecure: true
-ExternalDomain: '0.0.00.'
+ExternalDomain: '0.0.0.0'
 ExternalPort: 443
 
 Database:
     postgres:
-        Host: localhost
-        Port: 5432
+        Host: roundhouse.proxy.rlwy.net
+        Port: 46997
         Database: zitadel
         MaxOpenConns: 25
         MaxConnLifetime: 1h
@@ -21,7 +21,7 @@ Database:
                 Key:
         Admin:
             Username: postgres
-            Password: postgres
+            Password: F62beaD6E2F1A1cg3Gc3fAa1CD1f166c
             SSL:
                 Mode: disable
                 RootCert:
