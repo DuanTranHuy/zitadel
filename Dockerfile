@@ -36,4 +36,4 @@ ENV ZITADEL_MASTER_KEY=${ZITADEL_MASTER_KEY}
 
 EXPOSE 8080
 
-CMD ["start-from-init", "--masterkey", "${ZITADEL_MASTER_KEY}", "--tlsMode", "external"]
+CMD start-from-init --masterkey $ZITADEL_MASTER_KEY --tlsMode external
