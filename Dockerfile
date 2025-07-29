@@ -27,5 +27,3 @@ ENV ZITADEL_EXTERNALDOMAIN=${ZITADEL_EXTERNALDOMAIN}
 ENV ZITADEL_MASTERKEY=${ZITADEL_MASTERKEY}
 
 EXPOSE 8080
-
-CMD ["start-from-init", "--masterkeyFromEnv", "--tlsMode", "external"]
