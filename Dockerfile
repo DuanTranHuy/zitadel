@@ -1,4 +1,4 @@
-FROM ghcr.io/zitadel/zitadel:latest
+FROM ghcr.io/zitadel/zitadel:v4.0.0
 
 ARG ZITADEL_DATABASE_POSTGRES_HOST
 ARG ZITADEL_DATABASE_POSTGRES_PORT
